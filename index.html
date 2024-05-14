@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+   <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            Yellow: "hsl(47, 88% ,63%)",
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body class="bg-Yellow grid h-screen place-items-center">
+  <div class="flex flex-col gap-3 w-80 bg-white px-4 py-4 border-black rounded-2xl shadow-[10px_10px_0px_0px_rgba(3,0,2)]">
+    <img class="rounded-xl mb-2" src="assets/images/illustration-article.svg" alt="illustration">
+    <div class="max-w-xs">
+      <p class="inline-block px-3 py-2 bg-Yellow font-bold text-xs rounded-sm">Learning</p>
+    </div>
+    
+    <p class="text-xs">Published 21 Dec 2023</p>
+    <h1 class="font-bold text-lg hover:text-Yellow cursor-pointer">HTML & CSS foundations</h1>
+    <p class="text-sm text-gray-400 mb-2 ">These languages are the backbone of every website , defining structure , content and presentation.</p>
+    <div class="flex gap-4 items-center">
+      <img class="h-8 " src="assets/images/image-avatar.webp" alt="user">
+      <p class="font-bold">Greg Hooper</p>
+    </div>
+
+  </div>
+  
+
+  
+</body>
+</html>
